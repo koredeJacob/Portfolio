@@ -12,6 +12,9 @@ export default {
 					100: 'f9fafb',
 					200: 'd1d5db'
 				}
+			},
+			screens: {
+				lg: '990px'
 			}
 		}
 	},

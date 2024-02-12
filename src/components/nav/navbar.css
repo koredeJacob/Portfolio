@@ -39,13 +39,18 @@
 }
 
 .menu.open {
-    transform: translateY(0);
+    transform: translateX(0);
 }
 
 .menu.close {
-    transform: translateY(-440px);
+    transform: translateX(450px);
 }
 
+@media(min-width:450px){
+    .menu.close{
+        transform: translateX(768px);
+    }
+}
 @media(min-width:768px) {
     .hamburger-middle {
         transform: translateY(9px);
@@ -53,5 +58,8 @@
 
     .hamburger-bottom {
         transform: translateY(18px);
+    }
+    .menu.close{
+        transform: translateX(990px);
     }
 }
