@@ -9,7 +9,7 @@ const App=()=>{
 		setShow(!Show)
 	}
     return (
-        <div className={`w-full relative bg-dark-200 ${Show?'h-screen':''} overflow-hidden`}>
+        <div className={`w-full relative bg-dark-200 ${Show?'h-dvh':''} overflow-hidden`}>
             <Nav show={Show} handleToggle={handleToggle}/>
             <Main/>
         </div>

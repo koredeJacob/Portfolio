@@ -28,16 +28,16 @@ const Main =()=>{
             </div>
             <Skills/>
         </section>
-        <section className='py-16 bg-dark-10'>
+        <section className='py-16 bg-dark-10 space-y-6 md:space-y-12'>
             <div className='text-light-50 space-y-3'>
                 <div className='bg-dark-20 px-5 py-1 w-fit mx-auto rounded-xl'>
                     <p >Experience</p>
                 </div>
                 <div>
-                    <p className='text-center text-lg md:text-xl'>Here is a quick summary of my most recent experiences</p>
+                    <p className='text-center text-lg md:text-xl'>Here is a quick summary of my most recent experiences:</p>
                 </div>
             </div>
-            <div>
+            <div className='flex flex-col gap-y-6 md:gap-y-12'>
                 <Experience/>
                 <Experience/>
             </div>
