@@ -18,7 +18,8 @@ export default {
 				}
 			},
 			screens: {
-				lg: '990px'
+				lg: '990px',
+				xl: '1200px'
 			}
 		}
 	},

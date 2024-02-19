@@ -1,7 +1,7 @@
 
 const Experience=()=>{
     return (
-        <div className="flex flex-col md:flex-row md:justify-between gap-4 md:gap-8 w-[92%] mx-auto bg-dark-50 p-8 rounded-xl shadow-md shadow-gray-950">
+        <div className="flex flex-col md:flex-row md:justify-between gap-4 bg-dark-50 p-8 rounded-xl shadow-md shadow-gray-950">
             <div className="order-1 md:w-1/4">
                 <h2 className="text-white text-2xl font-semibold">Edgi Design</h2>
             </div>

@@ -11,8 +11,8 @@ const Nav:React.FC<showProps>=({show,handleToggle})=>{
    
 
     return (
-    <header className='fixed w-full py-1.5 z-30 bg-dark-200'>
-        <div className='container relative flex w-[92%] max-w-[1280px] lg:w-[94%] h-[70px] mx-auto justify-between items-center'>
+    <header className='fixed w-full z-30 py-1 bg-dark-200'>
+        <div className='container relative flex w-[92%] max-w-[1220px] lg:w-[94%] h-[50px] lg:h-[60px] mx-auto justify-between items-center'>
             <div className='flex flex-col items-center'>
                 <h1 className='text-white font-semibold text-2xl tracking-normal'>&lt;KJ /&gt;</h1>
             </div>
@@ -45,7 +45,7 @@ const Nav:React.FC<showProps>=({show,handleToggle})=>{
                 </div>
             </div>
         </div>
-        <nav className={`menu w-full h-screen max-w-[1280px] absolute bg-dark-200 px-6 py-10  md:px-8 lg:hidden rounded-b-xl ${show?'open':'close'}`}>
+        <nav className={`menu w-full h-screen absolute bg-dark-200 px-6 py-10  md:px-8 lg:hidden rounded-b-xl ${show?'open':'close'}`}>
             <ul className='flex flex-col gap-y-6 md:gap-y-7 tracking-wide'>
                 <li>
                     <Link to='/vehicles' className='text-gray-100 text-2xl md:text-2xl font-nunito font-medium'>Experience</Link>
