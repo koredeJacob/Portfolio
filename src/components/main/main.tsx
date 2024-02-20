@@ -7,7 +7,7 @@ import './main.css'
 const Main =()=>{
     return (
      <main className="mt-[60px]">
-        <section className="flex flex-col md:flex-row w-[92%] md:w-[94%] md:gap-8 md:items-start lg:items-center max-w-[1220px] mx-auto py-16 pt-6 md:pt-8 lg:py-16 md:justify-between">
+        <section className="flex flex-col md:flex-row w-[92%] md:w-[94%] md:gap-8 md:items-start lg:items-center max-w-[1220px] mx-auto py-16 pt-6 md:pt-8 lg:py-16 md:justify-between" id='top'>
             <div className='w-[220px] sm:w-[250px] md:w-[325px] lg:w-[350px] h-auto mx-auto md:mx-0 pb-6 md:pb-0 order-1 md:order-2'>
                 <svg width="100%" height="100%" viewBox="0 0 162 160" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                     <rect width="162" height="160" fill="url(#pattern0)"/>
@@ -51,15 +51,137 @@ const Main =()=>{
                     </div>
                 </div>
                 <div>
-                    <div className='flex gap-2.5 md:gap-3'>
-                        <div>
-                            <a href="https://www.linkedin.com/in/korede-jacob/" target='_blank'>
+                    <div className='flex items-center'>
+                        <button className='p-2.5 hover:bg-dark-50 rounded-lg active:bg-dark-20 transition-colors duration-200'>
+                            <a href="https://www.linkedin.com/in/korede-jacob" target='_blank'>
                                 <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M44.4469 0H3.54375C1.58437 0 0 1.54688 0 3.45938V44.5312C0 46.4437 1.58437 48 3.54375 48H44.4469C46.4063 48 48 46.4438 48 44.5406V3.45938C48 1.54688 46.4063 0 44.4469 0ZM14.2406 40.9031H7.11563V17.9906H14.2406V40.9031ZM10.6781 14.8688C8.39063 14.8688 6.54375 13.0219 6.54375 10.7437C6.54375 8.46562 8.39063 6.61875 10.6781 6.61875C12.9563 6.61875 14.8031 8.46562 14.8031 10.7437C14.8031 13.0125 12.9563 14.8688 10.6781 14.8688ZM40.9031 40.9031H33.7875V29.7656C33.7875 27.1125 33.7406 23.6906 30.0844 23.6906C26.3812 23.6906 25.8187 26.5875 25.8187 29.5781V40.9031H18.7125V17.9906H25.5375V21.1219H25.6312C26.5781 19.3219 28.9031 17.4188 32.3625 17.4188C39.5719 17.4188 40.9031 22.1625 40.9031 28.3313V40.9031Z" fill="white"/>
                                 </svg>
                             </a>
-                        </div>
+                        </button>
+                        <button className='p-2.5 hover:bg-dark-50 rounded-lg active:bg-dark-20 transition-colors duration-200'>
+                            <a href="https://github.com/koredeJacob" target='_blank'>
+                                <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clipPath="url(#clip0_910_44)">
+                                <path fillRule="evenodd" clipRule="evenodd" d="M24.0199 0C10.7375 0 0 10.8167 0 24.1983C0 34.895 6.87988 43.9495 16.4241 47.1542C17.6174 47.3951 18.0545 46.6335 18.0545 45.9929C18.0545 45.4319 18.0151 43.509 18.0151 41.5055C11.3334 42.948 9.94198 38.6209 9.94198 38.6209C8.86818 35.8164 7.27715 35.0956 7.27715 35.0956C5.09022 33.6132 7.43645 33.6132 7.43645 33.6132C9.86233 33.7735 11.1353 36.0971 11.1353 36.0971C13.2824 39.7827 16.7422 38.7413 18.1341 38.1002C18.3328 36.5377 18.9695 35.456 19.6455 34.8552C14.3163 34.2942 8.70937 32.211 8.70937 22.9161C8.70937 20.2719 9.66321 18.1086 11.1746 16.4261C10.9361 15.8253 10.1008 13.3409 11.4135 10.0157C11.4135 10.0157 13.4417 9.3746 18.0146 12.4996C19.9725 11.9699 21.9916 11.7005 24.0199 11.6982C26.048 11.6982 28.1154 11.979 30.0246 12.4996C34.5981 9.3746 36.6262 10.0157 36.6262 10.0157C37.9389 13.3409 37.1031 15.8253 36.8646 16.4261C38.4158 18.1086 39.3303 20.2719 39.3303 22.9161C39.3303 32.211 33.7234 34.2539 28.3544 34.8552C29.2296 35.6163 29.9848 37.0583 29.9848 39.3421C29.9848 42.5871 29.9454 45.1915 29.9454 45.9924C29.9454 46.6335 30.383 47.3951 31.5758 47.1547C41.12 43.9491 47.9999 34.895 47.9999 24.1983C48.0392 10.8167 37.2624 0 24.0199 0Z" fill="white"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_910_44">
+                                    <rect width="48" height="48" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                                </svg>
+                            </a>
+                        </button>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section className='w-[92%] md:w-[94%] max-w-[1220px] mx-auto pb-16 space-y-6 md:space-y-12'>
+            <div className='text-light-50 space-y-3'>
+                <div className='bg-dark-20 px-5 py-1 w-fit mx-auto rounded-xl transition ease-in-out duration-200 hover:scale-105'>
+                    <p className='cursor-default'>Skills</p>
+                </div>
+                <div>
+                    <p className='text-center text-lg md:text-xl'>The skills, tools and technologies i am really good at:</p>
+                </div>
+            </div>
+            <Skills/>
+        </section>
+        <section className='py-16 bg-dark-10 space-y-6 md:space-y-12' id='experience'>
+            <div className='text-light-50 space-y-3'>
+                <div className='bg-dark-20 px-5 py-1 w-fit mx-auto rounded-xl transition ease-in-out duration-200 hover:scale-105'>
+                    <p className='cursor-default'>Experience</p>
+                </div>
+                <div>
+                    <p className='text-center text-lg md:text-xl w-[92%] mx-auto'>Here is a quick summary of my most recent experiences:</p>
+                </div>
+            </div>
+            <div className='flex flex-col md:gap-8 w-[92%] md:w-[94%] max-w-[1220px] mx-auto gap-y-6 md:gap-y-12'>
+                <Experience/>
+                <Experience/>
+            </div>
+        </section>
+        <section className='w-[92%] md:w-[94%] max-w-[1220px] mx-auto py-16 space-y-6 md:space-y-12' id='projects'>
+            <div className='text-light-50 space-y-3'>
+                <div className='bg-dark-20 px-5 py-1 w-fit mx-auto rounded-xl transition ease-in-out duration-200 hover:scale-105'>
+                    <p className='cursor-default'>Projects</p>
+                </div>
+                <div>
+                    <p className='text-center text-lg md:text-xl'>Some of the noteworthy projects i have done:</p>
+                </div>
+            </div>
+            <div className='flex flex-col gap-6 md:gap-12'>
+                <Project/>
+                <Project/>
+            </div>
+        </section>
+        <section className='py-16 bg-dark-10 flex flex-col gap-6 md:gap-12' id='contact'>
+            <div className='text-light-50 space-y-3'>
+                <div className='bg-dark-20 px-5 py-1 w-fit mx-auto rounded-xl transition ease-in-out duration-200 hover:scale-105'>
+                    <p className='cursor-default'>Get in touch</p>
+                </div>
+                <div>
+                    <p className='text-center text-lg md:text-xl w-[92%] mx-auto'>Feel free to reach out to me if you need a developer or simply want to connect:</p>
+                </div>
+            </div>
+            <div >
+                <div className='flex flex-col gap-1 md:gap-2'>
+                    <div className='flex items-center gap-4 justify-center'>
+                        <a href='mailto:jacobkorede5@gmail.com' className='flex items-center  gap-4'>
+                            <div>
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" className='md:w-8 md:h-8'>
+                                    <path d="M20.5 4H4.5C3.39543 4 2.5 4.89543 2.5 6V18C2.5 19.1046 3.39543 20 4.5 20H20.5C21.6046 20 22.5 19.1046 22.5 18V6C22.5 4.89543 21.6046 4 20.5 4Z" stroke="#D1D5DB" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                    <path d="M22.5 7L13.53 12.7C13.2213 12.8934 12.8643 12.996 12.5 12.996C12.1357 12.996 11.7787 12.8934 11.47 12.7L2.5 7" stroke="#D1D5DB" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h2 className='text-white text-lg md:text-4xl font-semibold'>jacobkorede5@gmail.com</h2>
+                            </div>
+                        </a>
                         <div>
+                            <button className='p-1 hover:bg-dark-50 rounded-lg active:bg-dark-20 transition-colors duration-200'>
+                                <svg width="37" height="37" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M26.5 14H16.5C15.3954 14 14.5 14.8954 14.5 16V26C14.5 27.1046 15.3954 28 16.5 28H26.5C27.6046 28 28.5 27.1046 28.5 26V16C28.5 14.8954 27.6046 14 26.5 14Z" stroke="#D1D5DB" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                    <path d="M10.5 22C9.4 22 8.5 21.1 8.5 20V10C8.5 8.9 9.4 8 10.5 8H20.5C21.6 8 22.5 8.9 22.5 10" stroke="#D1D5DB" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div className='flex items-center gap-4 justify-center'>
+                        <a href='tel:+2349070997036' className='flex items-center justify-center gap-4'>
+                            <div>
+                               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className='md:w-8 md:h-8'>
+                                    <path d="M21.9999 16.9201V19.9201C22.0011 20.1986 21.944 20.4743 21.8324 20.7294C21.7209 20.9846 21.5572 21.2137 21.352 21.402C21.1468 21.5902 20.9045 21.7336 20.6407 21.8228C20.3769 21.912 20.0973 21.9452 19.8199 21.9201C16.7428 21.5857 13.7869 20.5342 11.1899 18.8501C8.77376 17.3148 6.72527 15.2663 5.18993 12.8501C3.49991 10.2413 2.44818 7.27109 2.11993 4.1801C2.09494 3.90356 2.12781 3.62486 2.21643 3.36172C2.30506 3.09859 2.4475 2.85679 2.6347 2.65172C2.82189 2.44665 3.04974 2.28281 3.30372 2.17062C3.55771 2.05843 3.83227 2.00036 4.10993 2.0001H7.10993C7.59524 1.99532 8.06572 2.16718 8.43369 2.48363C8.80166 2.80008 9.04201 3.23954 9.10993 3.7201C9.23656 4.68016 9.47138 5.62282 9.80993 6.5301C9.94448 6.88802 9.9736 7.27701 9.89384 7.65098C9.81408 8.02494 9.6288 8.36821 9.35993 8.6401L8.08993 9.9101C9.51349 12.4136 11.5864 14.4865 14.0899 15.9101L15.3599 14.6401C15.6318 14.3712 15.9751 14.1859 16.3491 14.1062C16.723 14.0264 17.112 14.0556 17.4699 14.1901C18.3772 14.5286 19.3199 14.7635 20.2799 14.8901C20.7657 14.9586 21.2093 15.2033 21.5265 15.5776C21.8436 15.9519 22.0121 16.4297 21.9999 16.9201Z" stroke="#D1D5DB" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                </svg>
+
+                            </div>
+                            <div>
+                                <h2 className='text-white text-lg font-semibold md:text-4xl'>+234 9070997036</h2>
+                            </div>
+                        </a>
+                        <div>
+                            <button className='p-1 hover:bg-dark-50 rounded-lg active:bg-dark-20 transition-colors duration-200'>
+                                <svg width="37" height="37" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M26.5 14H16.5C15.3954 14 14.5 14.8954 14.5 16V26C14.5 27.1046 15.3954 28 16.5 28H26.5C27.6046 28 28.5 27.1046 28.5 26V16C28.5 14.8954 27.6046 14 26.5 14Z" stroke="#D1D5DB" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                    <path d="M10.5 22C9.4 22 8.5 21.1 8.5 20V10C8.5 8.9 9.4 8 10.5 8H20.5C21.6 8 22.5 8.9 22.5 10" stroke="#D1D5DB" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className='flex flex-col justify-center items-center gap-2'>
+                <p className='text-light-50'>you can also find me on these platforms!</p>
+                <div className='flex items-center'>
+                    <button className='p-2.5 hover:bg-dark-50 rounded-lg active:bg-dark-20 transition-colors duration-200'>
+                        <a href="https://www.linkedin.com/in/korede-jacob" target='_blank'>
+                            <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M44.4469 0H3.54375C1.58437 0 0 1.54688 0 3.45938V44.5312C0 46.4437 1.58437 48 3.54375 48H44.4469C46.4063 48 48 46.4438 48 44.5406V3.45938C48 1.54688 46.4063 0 44.4469 0ZM14.2406 40.9031H7.11563V17.9906H14.2406V40.9031ZM10.6781 14.8688C8.39063 14.8688 6.54375 13.0219 6.54375 10.7437C6.54375 8.46562 8.39063 6.61875 10.6781 6.61875C12.9563 6.61875 14.8031 8.46562 14.8031 10.7437C14.8031 13.0125 12.9563 14.8688 10.6781 14.8688ZM40.9031 40.9031H33.7875V29.7656C33.7875 27.1125 33.7406 23.6906 30.0844 23.6906C26.3812 23.6906 25.8187 26.5875 25.8187 29.5781V40.9031H18.7125V17.9906H25.5375V21.1219H25.6312C26.5781 19.3219 28.9031 17.4188 32.3625 17.4188C39.5719 17.4188 40.9031 22.1625 40.9031 28.3313V40.9031Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </button>
+                    <button className='p-2.5 hover:bg-dark-50 rounded-lg active:bg-dark-20 transition-colors duration-200'>
                         <a href="https://github.com/koredeJacob" target='_blank'>
                             <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clipPath="url(#clip0_910_44)">
@@ -72,52 +194,13 @@ const Main =()=>{
                             </defs>
                             </svg>
                         </a>
-                    </div>
+                    </button>
                 </div>
-            </div>
-        </div>
-        </section>
-        <section className='w-[92%] md:w-[94%] max-w-[1220px] mx-auto pb-16 space-y-6 md:space-y-12'>
-            <div className='text-light-50 space-y-3'>
-                <div className='bg-dark-20 px-5 py-1 w-fit mx-auto rounded-xl'>
-                    <p>Skills</p>
-                </div>
-                <div>
-                    <p className='text-center text-lg md:text-xl'>The skills, tools and technologies i am really good at:</p>
-                </div>
-            </div>
-            <Skills/>
-        </section>
-        <section className='py-16 bg-dark-10 space-y-6 md:space-y-12'>
-            <div className='text-light-50 space-y-3'>
-                <div className='bg-dark-20 px-5 py-1 w-fit mx-auto rounded-xl'>
-                    <p >Experience</p>
-                </div>
-                <div>
-                    <p className='text-center text-lg md:text-xl w-[92%] mx-auto'>Here is a quick summary of my most recent experiences:</p>
-                </div>
-            </div>
-            <div className='flex flex-col md:gap-8 w-[92%] md:w-[94%] max-w-[1220px] mx-auto gap-y-6 md:gap-y-12'>
-                <Experience/>
-                <Experience/>
             </div>
         </section>
-        <section className='w-[92%] md:w-[94%] max-w-[1220px] mx-auto py-16 space-y-6 md:space-y-12'>
-            <div className='text-light-50 space-y-3'>
-                <div className='bg-dark-20 px-5 py-1 w-fit mx-auto rounded-xl'>
-                    <p>Projects</p>
-                </div>
-                <div>
-                    <p className='text-center text-lg md:text-xl'>Some of the noteworthy projects i have done:</p>
-                </div>
-            </div>
-            <div>
-                <Project/>
-            </div>
-        </section>
-        <section>
-            
-        </section>
+        <footer className='py-4'>
+            <p className='text-light-50 text-center'> &copy; 2024 | designed by Sagar Shah</p>
+        </footer>
      </main>
     )
 }
