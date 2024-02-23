@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import Experience from '../Experience/Experience'
 import Project from '../projects/projects'
 import Skills from '../skills/skills'
@@ -5,8 +6,31 @@ import './main.css'
 
 
 const Main =()=>{
+    const [mail,setMail]=useState<boolean>(false)
+    const [number,setNumber]=useState<boolean>(false)
+
+    const url:string=import.meta.env.VITE_IMAGE_URL
+
+    const handleCopy=(text:string)=>{
+        navigator.clipboard.writeText(text)
+        if(text==='jacobkorede5@gmail.com'){
+            setMail(true)
+            setTimeout(() => {
+                setMail(false)
+            }, 2000);
+        }
+        else{
+            
+            setNumber(true)
+            setTimeout(() => {
+                setNumber(false)
+                console.log(number);
+                
+            },2000)
+        }
+    }
     return (
-     <main className="mt-[60px]">
+     <main className="mt-[60px] ">
         <section className="flex flex-col md:flex-row w-[92%] md:w-[94%] md:gap-8 md:items-start lg:items-center max-w-[1220px] mx-auto py-16 pt-6 md:pt-8 lg:py-16 md:justify-between" id='top'>
             <div className='w-[220px] sm:w-[250px] md:w-[325px] lg:w-[350px] h-auto mx-auto md:mx-0 pb-6 md:pb-0 order-1 md:order-2'>
                 <svg width="100%" height="100%" viewBox="0 0 162 160" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
@@ -98,8 +122,8 @@ const Main =()=>{
                 </div>
             </div>
             <div className='flex flex-col md:gap-8 w-[92%] md:w-[94%] max-w-[1220px] mx-auto gap-y-6 md:gap-y-12'>
-                <Experience/>
-                <Experience/>
+                <Experience company='Edgi Design' role='Backend Engineering Intern' date='Aug 2022 - Nov 2022' bullet={[""]}/>
+                <Experience  company='Radical X' role='Software Engineering Intern' date='Jun 2022 - Aug 2022' bullet={[""]}/>
             </div>
         </section>
         <section className='w-[92%] md:w-[94%] max-w-[1220px] mx-auto py-16 space-y-6 md:space-y-12' id='projects'>
@@ -112,8 +136,10 @@ const Main =()=>{
                 </div>
             </div>
             <div className='flex flex-col gap-6 md:gap-12'>
-                <Project/>
-                <Project/>
+                <Project url="https://digital-marketingz.netlify.app/" image={`${url}digital maeketing.png`} title='Digital Marketing Website' skills={["JavaScript","React","CSS"]} github='https://github.com/koredeJacob/Digital-Marketing-site' description=''/>
+                <Project url="https://koredejacob.github.io/manage-landingpage/" image={`${url}manage-website.png`} title='Manage Landing Page' skills={["HTML","Tailwind CSS","JavaScript"]} github='https://github.com/koredeJacob/manage-landingpage' description=''/>
+                <Project url='https://kwordle-clone.netlify.app/' image={`${url}wordle.png`} title='Wordle Clone' skills={["JavaScript","React","CSS"]} github='https://github.com/koredeJacob/Wordle-Clone' description=''/>
+                <Project url='https://sharer.onrender.com' image={`${url}sharer.png`} title='Sharer' skills={["JavaScript","React","Tailwind CSS","Node.js","MongoDB"]} github='https://github.com/koredeJacob/Sharer-frontend' description=''/>
             </div>
         </section>
         <section className='py-16 bg-dark-10 flex flex-col gap-6 md:gap-12' id='contact'>
@@ -139,8 +165,9 @@ const Main =()=>{
                                 <h2 className='text-white text-lg md:text-4xl font-semibold'>jacobkorede5@gmail.com</h2>
                             </div>
                         </a>
-                        <div>
-                            <button className='p-1 hover:bg-dark-50 rounded-lg active:bg-dark-20 transition-colors duration-200'>
+                        <div className='relative'>
+                            <span className={`absolute text-light-50 z-30 p-1 px-2 bg-dark-20 rounded-lg -top-9 right-px ${mail?"Flex":"hidden"}`}>copied!</span> 
+                            <button className='p-1 hover:bg-dark-50 rounded-lg active:bg-dark-20 transition-colors duration-200' onClick={()=>handleCopy('jacobkorede5@gmail.com')}>
                                 <svg width="37" height="37" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M26.5 14H16.5C15.3954 14 14.5 14.8954 14.5 16V26C14.5 27.1046 15.3954 28 16.5 28H26.5C27.6046 28 28.5 27.1046 28.5 26V16C28.5 14.8954 27.6046 14 26.5 14Z" stroke="#D1D5DB" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                                     <path d="M10.5 22C9.4 22 8.5 21.1 8.5 20V10C8.5 8.9 9.4 8 10.5 8H20.5C21.6 8 22.5 8.9 22.5 10" stroke="#D1D5DB" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -154,14 +181,14 @@ const Main =()=>{
                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className='md:w-8 md:h-8'>
                                     <path d="M21.9999 16.9201V19.9201C22.0011 20.1986 21.944 20.4743 21.8324 20.7294C21.7209 20.9846 21.5572 21.2137 21.352 21.402C21.1468 21.5902 20.9045 21.7336 20.6407 21.8228C20.3769 21.912 20.0973 21.9452 19.8199 21.9201C16.7428 21.5857 13.7869 20.5342 11.1899 18.8501C8.77376 17.3148 6.72527 15.2663 5.18993 12.8501C3.49991 10.2413 2.44818 7.27109 2.11993 4.1801C2.09494 3.90356 2.12781 3.62486 2.21643 3.36172C2.30506 3.09859 2.4475 2.85679 2.6347 2.65172C2.82189 2.44665 3.04974 2.28281 3.30372 2.17062C3.55771 2.05843 3.83227 2.00036 4.10993 2.0001H7.10993C7.59524 1.99532 8.06572 2.16718 8.43369 2.48363C8.80166 2.80008 9.04201 3.23954 9.10993 3.7201C9.23656 4.68016 9.47138 5.62282 9.80993 6.5301C9.94448 6.88802 9.9736 7.27701 9.89384 7.65098C9.81408 8.02494 9.6288 8.36821 9.35993 8.6401L8.08993 9.9101C9.51349 12.4136 11.5864 14.4865 14.0899 15.9101L15.3599 14.6401C15.6318 14.3712 15.9751 14.1859 16.3491 14.1062C16.723 14.0264 17.112 14.0556 17.4699 14.1901C18.3772 14.5286 19.3199 14.7635 20.2799 14.8901C20.7657 14.9586 21.2093 15.2033 21.5265 15.5776C21.8436 15.9519 22.0121 16.4297 21.9999 16.9201Z" stroke="#D1D5DB" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                                 </svg>
-
                             </div>
                             <div>
                                 <h2 className='text-white text-lg font-semibold md:text-4xl'>+234 9070997036</h2>
                             </div>
                         </a>
-                        <div>
-                            <button className='p-1 hover:bg-dark-50 rounded-lg active:bg-dark-20 transition-colors duration-200'>
+                        <div className='relative'>
+                            <span className={`absolute text-light-50 z-30 p-1 px-2 bg-dark-20 rounded-lg -top-9 right-px ${number?"Flex":"hidden"}`}>copied!</span> 
+                            <button className='p-1 hover:bg-dark-50 rounded-lg active:bg-dark-20 transition-colors duration-200' onClick={()=>  handleCopy('+234 9070997036')}>
                                 <svg width="37" height="37" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M26.5 14H16.5C15.3954 14 14.5 14.8954 14.5 16V26C14.5 27.1046 15.3954 28 16.5 28H26.5C27.6046 28 28.5 27.1046 28.5 26V16C28.5 14.8954 27.6046 14 26.5 14Z" stroke="#D1D5DB" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                                     <path d="M10.5 22C9.4 22 8.5 21.1 8.5 20V10C8.5 8.9 9.4 8 10.5 8H20.5C21.6 8 22.5 8.9 22.5 10" stroke="#D1D5DB" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>

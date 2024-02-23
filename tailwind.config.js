@@ -4,6 +4,7 @@ export default {
 	theme: {
 		extend: {
 			colors: {
+				nav: 'rgb(3,7,18)',
 				dark: {
 					10: 'rgb(17 ,24 ,39)',
 					20: 'rgb(55, 65, 81)',

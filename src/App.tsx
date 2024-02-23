@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Nav from "./components/nav/navbar"
 import Main from "./components/main/main"
 
@@ -8,8 +8,18 @@ const App=()=>{
 	const handleToggle=()=>{
 		setShow(!Show)
 	}
+
+    useEffect(()=>{
+        if(Show){
+            document.body.style.overflow='hidden'
+        }
+        else{
+            document.body.style.overflow='visible'
+        }
+    },[Show])
+
     return (
-        <div className={`w-full relative bg-dark-200 ${Show?'h-dvh':''} overflow-hidden`}>
+        <div className={`w-full relative bg-dark-200 overflow-hidden`}>
             <Nav show={Show} handleToggle={handleToggle}/>
             <Main/>
         </div>

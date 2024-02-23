@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, animateScroll as scroll } from 'react-scroll'
+import { Link} from 'react-scroll'
 import './navbar.css'
 
 interface showProps{
@@ -11,7 +11,7 @@ const Nav:React.FC<showProps>=({show,handleToggle})=>{
    
 
     return (
-    <header className='fixed w-full z-30 pb-1 pt-1.5 bg-dark-200'>
+    <header className='fixed w-full z-30 pb-1 bg-nav/50 pt-1.5 backdrop-blur-xl'>
         <div className='container relative flex w-[92%] max-w-[1220px] lg:w-[94%] h-[50px] lg:h-[60px] mx-auto justify-between items-center'>
             <div className='flex flex-col items-center'>
                 <Link to='top' duration={500} smooth={true} spy={true} offset={-64} className='text-white font-semibold text-2xl tracking-normal cursor-pointer'>&lt;KJ /&gt;</Link>
