@@ -1,7 +1,3 @@
-import img from "../../assets/homepage.png"
-
-const skills=["React","javaScript","CSS"]
-
 interface ProjectProps{
     url:string,
     image:string,
@@ -15,14 +11,14 @@ const Project:React.FC<ProjectProps>=({url,image,title,description,skills,github
     return (
         <div className="bg-dark-50 rounded-xl shadow-md shadow-gray-950 md:flex">
             <div className="flex justify-center items-center w-full p-8 lg:p-12 h-auto bg-dark-20 rounded-t-xl md:rounded-r-none md:rounded-l-xl md:w-1/2">
-                <img src={image} loading="lazy" className="rounded-xl w-[100%] h-auto shadow-lg transition-transform duration-500 hover:scale-105"/>
+                <img src={image} loading="lazy" alt="project image" className="rounded-xl w-[100%] h-auto shadow-lg transition-transform duration-500 hover:scale-105"/>
             </div>
             <div className="flex flex-col gap-6 p-8 lg:p-12 md:w-1/2">
                 <div>
                     <h1 className="text-white text-lg font-semibold md:text-xl">{title}</h1>
                 </div>
                 <div>
-                    <p className="text-light-50 text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore minus maxime, illo magni consequuntur fuga ipsum laboriosam asperiores, deleniti sunt vero in enim eligendi cum nulla?</p>
+                    <p className="text-light-50 text-base">{description}</p>
                 </div>
                 <div className="flex flex-wrap gap-2">
                     {skills.map((skill,index)=>{

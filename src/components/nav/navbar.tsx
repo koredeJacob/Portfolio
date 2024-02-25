@@ -36,16 +36,16 @@ const Nav:React.FC<showProps>=({show,handleToggle})=>{
                     </ul>
                 </div>
                 <div>
-                    <Link to="#">
+                    <a href="https://drive.google.com/file/d/1XcdRu_75jaOMNCVSDPdjz9juBTbgAjle/view?usp=drive_link" target='_blank'>
                         <button className='flex gap-x-1 items-center bg-gray-100 px-4 py-1.5 w-fit rounded-[20px] 
                         transition ease-in-out hover:scale-105 duration-300' >
-                            <p className='text-bgblue text-lg font-nunito font-medium'>Download CV</p>
+                            <p className='text-bgblue text-lg font-nunito font-medium'>Resume</p>
                         </button>
-                    </Link>
+                    </a>
                 </div>
             </div>
         </div>
-        <nav className={`menu w-full h-screen absolute bg-dark-200 px-6 py-10  md:px-8 lg:hidden rounded-b-xl ${show?'open':'close'}`}>
+        <nav className={`menu w-full h-screen absolute bg-dark-200 px-6 py-10 md:px-8 lg:hidden rounded-b-xl ${show?'open':'close'}`}>
             <ul className='flex flex-col gap-y-6 md:gap-y-7 tracking-wide'>
                 <li>
                     <Link to='experience' onClick={handleToggle} duration={500} smooth={true} spy={true} offset={-32} delay={300} className='text-light-50 text-2xl md:text-2xl font-nunito font-medium'>Experience</Link>
@@ -57,12 +57,12 @@ const Nav:React.FC<showProps>=({show,handleToggle})=>{
                     <Link to='contact' onClick={handleToggle} duration={500} smooth={true} spy={true} offset={-32} delay={300} className='text-light-50 text-2xl md:text-2xl font-nunito font-medium'>Contact</Link>
                 </li>
                 <li>
-                    <Link to="#">
+                    <a href="https://drive.google.com/file/d/1XcdRu_75jaOMNCVSDPdjz9juBTbgAjle/view?usp=drive_link" target='_blank'>
                         <button className='flex items-center mt-5 bg-gray-100 px-4 py-1.5 w-fit rounded-[20px] 
                         transition ease-in-out hover:scale-105 duration-300' >
-                            <p className='text-dark-200 text-lg font-nunito font-medium'>Download CV</p>
+                            <p className='text-dark-200 text-lg font-nunito font-medium'>Resume</p>
                         </button>
-                    </Link>
+                    </a>
                 </li>
             </ul>
         </nav>

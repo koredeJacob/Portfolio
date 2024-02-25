@@ -46,7 +46,7 @@ const Main =()=>{
             <div className='flex flex-col gap-6 order-2 md:order-1 md:w-[60%] lg:w-[62%] max-w-3xl md:gap-8'>
                 <div className="space-y-1.5 md:space-y-2">
                     <h1 className="text-white text-4xl font-semibold md:text-[42px] lg:text-6xl font-bold">Hi, I'm Korede <span className='wave' role="img" aria-label="wave">👋</span></h1>
-                    <p className="text-light-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus atque consectetur optio voluptates voluptatibus ad rem expedita eveniet voluptatum iure id rerum possimus dignissimos, et quae obcaecati, repudiandae corporis cumque nobis molestiae! Reprehenderit animi voluptatibus reiciendis minima rerum, ab maiores!</p>      
+                    <p className="text-light-50">I'm a seasoned full-stack developer with over a year of experience crafting innovative digital solutions. I thrive in a collaborative environment and enjoy working on challenging problems. Explore my portfolio showcasing the fusion of creativity and functionality in web development. Let's build something amazing together!</p>      
                 </div>
                 <div >
                     <div className='flex flex-col gap-2'>
@@ -122,8 +122,8 @@ const Main =()=>{
                 </div>
             </div>
             <div className='flex flex-col md:gap-8 w-[92%] md:w-[94%] max-w-[1220px] mx-auto gap-y-6 md:gap-y-12'>
-                <Experience company='Edgi Design' role='Backend Engineering Intern' date='Aug 2022 - Nov 2022' bullet={[""]}/>
-                <Experience  company='Radical X' role='Software Engineering Intern' date='Jun 2022 - Aug 2022' bullet={[""]}/>
+                <Experience company='Edgi Design' role='Backend Engineering Intern' date='Aug 2022 - Nov 2022' bullet={["Worked on a team of 5 developers to build a backend API for a gamified language learning web application","Implemented the API functionalities for the leaderboard and scoring features of the app using PHP, Laravel and MySQL","Improved the user authentication system of the app by incorporating social login through Google and Facebook using the Laravel Socialite package, resulting in a 25% increase in new user sign ups"]}/>
+                <Experience  company='Radical X' role='Software Engineering Intern' date='Jun 2022 - Aug 2022' bullet={[" Collaborated with a team of 4 developers to build a web platform that allows companies to setup apprenticeship and internship programmes"," Executed more than 60% of the backend REST API using Node.js and designed a flexible database using Cloud Firestore","Developed reusable UI components for several pages of the app using React"]}/>
             </div>
         </section>
         <section className='w-[92%] md:w-[94%] max-w-[1220px] mx-auto py-16 space-y-6 md:space-y-12' id='projects'>
@@ -136,10 +136,11 @@ const Main =()=>{
                 </div>
             </div>
             <div className='flex flex-col gap-6 md:gap-12'>
-                <Project url="https://digital-marketingz.netlify.app/" image={`${url}digital maeketing.png`} title='Digital Marketing Website' skills={["JavaScript","React","CSS"]} github='https://github.com/koredeJacob/Digital-Marketing-site' description=''/>
-                <Project url="https://koredejacob.github.io/manage-landingpage/" image={`${url}manage-website.png`} title='Manage Landing Page' skills={["HTML","Tailwind CSS","JavaScript"]} github='https://github.com/koredeJacob/manage-landingpage' description=''/>
-                <Project url='https://kwordle-clone.netlify.app/' image={`${url}wordle.png`} title='Wordle Clone' skills={["JavaScript","React","CSS"]} github='https://github.com/koredeJacob/Wordle-Clone' description=''/>
-                <Project url='https://sharer.onrender.com' image={`${url}sharer.png`} title='Sharer' skills={["JavaScript","React","Tailwind CSS","Node.js","MongoDB"]} github='https://github.com/koredeJacob/Sharer-frontend' description=''/>
+                <Project url="https://digital-marketingz.netlify.app/" image={`${url}digital maeketing.png`} title='Digital Marketing Website' skills={["JavaScript","React","CSS"]} github='https://github.com/koredeJacob/Digital-Marketing-site' description='Developed a dynamic and visually compelling website for an imaginary digital marketing agency. The site prioritizes seamless user experience and ensures responsiveness across devices.'/>
+                <Project url='https://sj-motors.onrender.com/' image={`${url}wordle.png`} title='Osj Motors' skills={["TypeScript","React","TailwindCSS","Node.js","Express","MongoDB","AWS S3"]} github='/' description='Developed an intuitive car sales website for Osj Motors which led to a 30% increase in sales.'/>
+                <Project url='https://kwordle-clone.netlify.app/' image={`${url}wordle.png`} title='Kwordle' skills={["JavaScript","React","CSS"]} github='https://github.com/koredeJacob/Wordle-Clone' description='Kwordle is a clone of the popular word guessing game Wordle. I implemented core game features and statistics like win percentage and guess distribution.'/>
+                <Project url="https://koredejacob.github.io/manage-landingpage/" image={`${url}manage-website.png`} title='Manage Landing Page' skills={["HTML","Tailwind CSS","JavaScript"]} github='https://github.com/koredeJacob/manage-landingpage' description='Developed a landing page with a clean and responsive interface.'/>
+                <Project url='https://sharer.onrender.com' image={`${url}sharer.png`} title='Sharer' skills={["JavaScript","React","Tailwind CSS","Node.js","express","MongoDB"]} github='https://github.com/koredeJacob/Sharer-frontend' description='Sharer is a web application that allows users to share thoughts, knowledge and discuss ideas. On sharer users can sign in, create posts, comment and like posts as well as delete posts and comments.'/>
             </div>
         </section>
         <section className='py-16 bg-dark-10 flex flex-col gap-6 md:gap-12' id='contact'>
