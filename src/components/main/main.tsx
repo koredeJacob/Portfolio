@@ -107,7 +107,7 @@ const Main =()=>{
                     <p className='cursor-default'>Skills</p>
                 </div>
                 <div>
-                    <p className='text-center text-lg md:text-xl'>The skills, tools and technologies i am really good at:</p>
+                    <p className='text-center text-lg md:text-xl'>The skills, tools and technologies I am good at:</p>
                 </div>
             </div>
             <Skills/>
@@ -200,7 +200,7 @@ const Main =()=>{
                 </div>
             </div>
             <div className='flex flex-col justify-center items-center gap-2'>
-                <p className='text-light-50'>you can also find me on these platforms!</p>
+                <p className='text-light-50'>You can also find me on these platforms</p>
                 <div className='flex items-center'>
                     <button className='p-2.5 hover:bg-dark-50 rounded-lg active:bg-dark-20 transition-colors duration-200'>
                         <a href="https://www.linkedin.com/in/korede-jacob" target='_blank'>
